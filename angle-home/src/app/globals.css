@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Isotope Palette */
+  --void: #080808;
+  --paper: #E6E6E6;
+  --signal-a: #FF4400;
+  --signal-n: #00FF41;
+  --signal-g: #3457D5;
+  --signal-l: #E3FF00;
+  --signal-e: #8A0B0B;
+}
+
+@theme inline {
+  /* Colors */
+  --color-void: var(--void);
+  --color-paper: var(--paper);
+  --color-signal-a: var(--signal-a);
+  --color-signal-n: var(--signal-n);
+  --color-signal-g: var(--signal-g);
+  --color-signal-l: var(--signal-l);
+  --color-signal-e: var(--signal-e);
+  
+  /* Fonts */
+  --font-sans: 'Inter Tight', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--void);
+  color: var(--paper);
+  font-family: var(--font-sans);
+}
+
+/* Selection styling */
+::selection {
+  background: var(--paper);
+  color: var(--void);
+}
